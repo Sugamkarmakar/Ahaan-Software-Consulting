@@ -7,14 +7,14 @@ const ImageCarousel = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const images = [
-    "https://portfolio.ahaansoftware.com/wp-content/uploads/2025/03/9.png",
-    "https://portfolio.ahaansoftware.com/wp-content/uploads/2025/03/7.png",
-    "https://portfolio.ahaansoftware.com/wp-content/uploads/2025/03/6.png",
-    "https://portfolio.ahaansoftware.com/wp-content/uploads/2025/03/5.png",
-    "https://portfolio.ahaansoftware.com/wp-content/uploads/2025/03/4.png",
-    "https://portfolio.ahaansoftware.com/wp-content/uploads/2025/03/3.png",
-    "https://portfolio.ahaansoftware.com/wp-content/uploads/2025/03/2.png",
-    "https://portfolio.ahaansoftware.com/wp-content/uploads/2025/03/1.png",
+    "../../../../public/Images/1.jpg",
+    "../../../../public/Images/2.jpg",
+    "../../../../public/Images/3.jpg",
+    "../../../../public/Images/4.jpg",
+    "../../../../public/Images/5.jpg",
+    "../../../../public/Images/6.jpg",
+    "../../../../public/Images/7.jpg",
+    "../../../../public/Images/9.jpg",
   ];
 
   const openModal = (image) => {
