@@ -46,7 +46,7 @@ const Footer = () => {
           {/* Logo & Social Links */}
           <Col lg={4} md={6} sm={12} className="footer-section text-left text-md-start">
             <a href='https://ahaansoftware.com/' className="d-inline-block">
-              <img src="https://ahaansoftware.com/images/ahaan.png" alt="Logo" className="footer-logo mb-3" />
+              <img src="https://ahaansoftware.com/uploadedimage/asc.png" alt="Logo" className="footer-logo mb-3" />
             </a>
             <p className="footer-subtitle">
               Top IT Consulting Company Delivering Custom Website and App at Ahaan Software Consulting.

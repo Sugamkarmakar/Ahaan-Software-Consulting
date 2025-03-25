@@ -1,7 +1,6 @@
 
 .asc-logo {
-  height: 45px;
- 
+  max-width: 170px;
 }
 .asc-header{
   display: flex;

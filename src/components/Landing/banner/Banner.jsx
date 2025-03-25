@@ -39,7 +39,7 @@ const Banner = () => {
   return (
     <section
       className="banner-section"
-      style={{ backgroundImage: `url(${bannerImage})` }}
+      style={{ backgroundImage: `url(https://ahaansoftware.com/uploadedimage/Banner/LandingBanner.jpg)` }}
     >
       <Container>
         <Row className="align-items-center">

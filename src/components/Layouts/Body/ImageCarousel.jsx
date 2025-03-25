@@ -7,14 +7,14 @@ const ImageCarousel = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const images = [
-    "../../../../public/Images/1.jpg",
-    "../../../../public/Images/2.jpg",
-    "../../../../public/Images/3.jpg",
-    "../../../../public/Images/4.jpg",
-    "../../../../public/Images/5.jpg",
-    "../../../../public/Images/6.jpg",
-    "../../../../public/Images/7.jpg",
-    "../../../../public/Images/9.jpg",
+    "https://ahaansoftware.com/uploadedimage/1.jpg",
+    "https://ahaansoftware.com/uploadedimage/2.jpg",
+    "https://ahaansoftware.com/uploadedimage/3.jpg",
+    "https://ahaansoftware.com/uploadedimage/4.jpg",
+    "https://ahaansoftware.com/uploadedimage/5.jpg",
+    "https://ahaansoftware.com/uploadedimage/6.jpg",
+    "https://ahaansoftware.com/uploadedimage/7.jpg",
+    "https://ahaansoftware.com/uploadedimage/9.jpg",
   ];
 
   const openModal = (image) => {

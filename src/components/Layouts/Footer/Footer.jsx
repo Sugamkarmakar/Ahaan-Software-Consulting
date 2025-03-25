@@ -34,7 +34,7 @@ const Footer = () => {
           <div className="col-md-4 ">
           <div className="footer-logo-input">
             <img
-              src="https://ahaansoftware.com/images/ahaan.png"
+              src="https://ahaansoftware.com/uploadedimage/asc.png"
               alt="Ahaan Logo"
               className="footer-logo"
             />

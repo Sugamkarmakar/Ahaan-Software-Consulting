@@ -27,10 +27,10 @@ const ResponsiveNavbar = () => {
           {/* Logo */}
           <NavbarBrand href="https://ahaansoftware.com/" className="fw-bold">
             <img
-              src="https://ahaansoftware.com/images/ahaan.png"
+              src="https://ahaansoftware.com/uploadedimage/asc.png"
               alt="Logo"
               className="me-2"
-              style={{ height: "40px" }}
+              style={{ height: "50px" }}
             />
           </NavbarBrand>
 

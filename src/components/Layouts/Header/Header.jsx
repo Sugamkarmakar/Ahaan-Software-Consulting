@@ -50,7 +50,7 @@ const Header = () => {
         {/* Logo */}
         <a className="navbar-brand d-flex align-items-center" href="/">
           <img
-            src="https://ahaansoftware.com/images/ahaan.png"
+            src="https://ahaansoftware.com/uploadedimage/asc.png"
             alt="logo"
             className="asc-logo"
           />

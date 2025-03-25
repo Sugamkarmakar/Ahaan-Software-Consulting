@@ -2,22 +2,22 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col, Image, Badge } from "react-bootstrap";
 import "./FirstBanner.css";
 
-// Import banner images
-import Banner1 from "../../../assets/HomeBanner.png";
-import Banner2 from "../../../assets/HomeBanner2.png";
-import Banner3 from "../../../assets/HomeBanner3.png";
-import Banner4 from "../../../assets/HomeBanner4.png";
-import Banner5 from "../../../assets/HomeBanner5.png";
-import Banner6 from "../../../assets/HomeBanner6.png";
+// Banner images (URLs used directly)
+const banners = [
+  "https://ahaansoftware.com/uploadedimage/Banner/HomeBanner.png",
+  "https://ahaansoftware.com/uploadedimage/Banner/HomeBanner2.png",
+  "https://ahaansoftware.com/uploadedimage/Banner/HomeBanner3.png",
+  "https://ahaansoftware.com/uploadedimage/Banner/HomeBanner4.png",
+  "https://ahaansoftware.com/uploadedimage/Banner/HomeBanner5.png",
+  "https://ahaansoftware.com/uploadedimage/Banner/HomeBanner6.png",
+];
 
-// Import certification images
+// Certification images (served locally)
 import Group1 from "../../../assets/images/banner/Group1.jpg";
 import Group2 from "../../../assets/images/banner/Group2.jpg";
 import Group3 from "../../../assets/images/banner/Group3.jpg";
 import Group4 from "../../../assets/images/banner/Group4.jpg";
 import Group5 from "../../../assets/images/banner/Group5.jpg";
-
-const banners = [Banner1, Banner2, Banner3, Banner4, Banner5, Banner6]; // Array of banners
 
 const FirstBanner = () => {
   const [currentBanner, setCurrentBanner] = useState(0);
@@ -36,6 +36,9 @@ const FirstBanner = () => {
         className="banner-container"
         style={{
           backgroundImage: `url(${banners[currentBanner]})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          height: "600px",
         }}
       >
         <Container>
