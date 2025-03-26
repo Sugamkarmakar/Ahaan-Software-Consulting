@@ -1,18 +1,17 @@
 import React from 'react';
-import html from '../../../assets/Tech/html.png';
-import css from '../../../assets/Tech/css.png';
-import js from '../../../assets/Tech/javascript.png';
-import php from '../../../assets/Tech/php.png';
-import wordpress from '../../../assets/Tech/wordpress.png';
-import react from '../../../assets/Tech/react.png';
-import mongodb from '../../../assets/Tech/mongo.png';
-import shopify from '../../../assets/Tech/shopify.png';
-import framer from '../../../assets/Tech/framer.png';
-import webflow from '../../../assets/Tech/webflow.png';
-import oddo from '../../../assets/Tech/oddo.png';
-import node from '../../../assets/Tech/node.png';
-import bootstrap from '../../../assets/Tech/bootstrap.png';
-import figma from '../../../assets/Tech/figma.png';
+import html from '../../../assets/Tech/html.jpeg';
+import css from '../../../assets/Tech/css.jpeg';
+import js from '../../../assets/Tech/javascript.jpeg';
+import php from '../../../assets/Tech/php.jpeg';
+import wordpress from '../../../assets/Tech/wordpress.jpeg';
+import react from '../../../assets/Tech/react.jpeg';
+import mongodb from '../../../assets/Tech/mongo.jpeg';
+import shopify from '../../../assets/Tech/shopify.jpeg';
+import webflow from '../../../assets/Tech/webflow.jpeg';
+import oddo from '../../../assets/Tech/oddo.jpeg';
+import node from '../../../assets/Tech/node.jpeg';
+import bootstrap from '../../../assets/Tech/bootstrap.jpeg';
+import figma from '../../../assets/Tech/figma.jpeg';
 import './Tech.css';
 
 const images = [
@@ -28,7 +27,6 @@ const images = [
   { src: oddo, alt: 'Oddo' },
   { src: shopify, alt: 'Shopify' },
   { src: webflow, alt: 'Webflow' },
-  { src: framer, alt: 'Framer' },
   { src: wordpress, alt: 'WordPress' },
 ];
 

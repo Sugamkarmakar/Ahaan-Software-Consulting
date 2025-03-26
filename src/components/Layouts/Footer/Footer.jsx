@@ -129,12 +129,12 @@ const Footer = () => {
         <h5 className="contact-us-heading-for-desktop footer-heading">CONTACT US</h5>
 
           <p className="contact-info">
-            <FaLocationDot className="icon" /> Bengal Eco Intelligent Park, EM Block, Sector V, Kolkata-91
+            <FaLocationDot className="icon" /> Bengal Eco Intelligent Park, EM Block, Sector V, Kolkata-700 091
           </p>
           <p className="contact-info ">
             <FaPhone className="icon" />
-            <a href="tel:+13214210740">+13214210740</a> /
-            <a href="tel:+919830371143">+919830371143</a>
+            <a href="tel:+13214210740">+1 321-421-0740</a> &nbsp;/&nbsp;
+            <a href="tel:+919830371143">+91 983-037-1143</a>
           </p>
           <p className="contact-info">
             <FaEnvelope className="icon" />

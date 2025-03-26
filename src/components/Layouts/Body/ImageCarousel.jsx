@@ -51,7 +51,6 @@ const ImageCarousel = () => {
         ))}
       </div>
 
-      {/* Modal */}
       {selectedImage && (
         <div
           className="modal fade show d-block modal-pop"

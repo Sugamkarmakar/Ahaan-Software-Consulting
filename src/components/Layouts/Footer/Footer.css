@@ -133,11 +133,7 @@
   padding: 20px;
 }
 
-.sidebar-content {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
+
 
 .nav-links {
   display: flex;

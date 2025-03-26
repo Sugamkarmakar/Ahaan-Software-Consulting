@@ -45,7 +45,7 @@ const Header = () => {
   }, [sidebarOpen]);
 
   return (
-    <nav className="navbar navbar-expand-lg bg-white py-4">
+    <nav className="navbar navbar-expand-lg bg-white">
       <div className="container ">
         {/* Logo */}
         <a className="navbar-brand d-flex align-items-center" href="/">
@@ -114,7 +114,7 @@ const Header = () => {
           </div>
           <hr />
           <div className="social-links">
-            {/* Social media icons with links */}
+           
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
               <FaFacebookF size={24} color="#43387B" />
             </a>

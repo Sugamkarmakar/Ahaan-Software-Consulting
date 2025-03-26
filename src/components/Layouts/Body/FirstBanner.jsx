@@ -25,7 +25,7 @@ const FirstBanner = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentBanner((prev) => (prev + 1) % banners.length);
-    }, 5000); // Change image every 5 seconds
+    }, 15000); 
 
     return () => clearInterval(interval);
   }, []);

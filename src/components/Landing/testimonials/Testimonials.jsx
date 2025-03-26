@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-import testi1 from '../../../assets/testi1.jpg';
-import testi2 from '../../../assets/testi2.jpg';
-import testi3 from '../../../assets/testi3.webp';
-import testi4 from '../../../assets/testi4.webp';
-import testi5 from '../../../assets/testi5.webp';
-import testi6 from '../../../assets/testi6.jpg';
+import testi1 from '../../../assets/testi1.png';
+import testi3 from '../../../assets/testi3.png';
+import testi4 from '../../../assets/testi4.png';
+import testi6 from '../../../assets/testi6.png';
 import { FaAngleLeft } from "react-icons/fa";
 import { FaAngleRight } from "react-icons/fa";
 import './Testimonials.css'
@@ -12,32 +10,22 @@ const TestimonialCarousel = () => {
     const testimonials = [
         {
           id: 1,
-          quote: "I had a fantastic experience with the development of my website and app. The team was professional, delivered high-quality work, and provided excellent after-sales service. A special thanks to Director Vishal Jaiswal, whose immense knowledge and support made the process smooth and efficient. Highly recommended!",
-          name: "Asish Poonawalla",
+          quote: "I had a very wonderful exprince with ahaan software they created our clothing brand website heliclothing( mens lcasual wear) Really apriciated their work",
+          name: "Sam Jais",
           image: testi1, 
         },
         {
           id: 2,
-          quote: "Disciplined job and are ethically trustworthy. The team of this company are always available for inquiries and questions, and they provide support, key insight, ideas and direction when possible. I think they have a good team, well organized and efficient with their time. Nice experience with this company that designed my business website.",
-          name: "Janvi Jain",
+          quote: "Good designing & development company. Recently, they have designed my website and currently doing marketing for Solar Installation services. Work quality is excellent and they met my expectations. Thanks to your entire team. 👍",
+          name: "Samuel Watson",
           image: testi3, 
         },
-        {
-          id: 3,
-          quote: "Good designing & development company. Recently, they have designed my website and currently doing marketing for Solar Installation services. Work quality is excellent and they met my expectations.",
-          name: "Samuel Watson",
-          image: testi2, 
-        },
-        {
-          id: 4,
-          quote: "I had an excellent experience working with this Ahaan Software Consulting. They delivered a high-quality website and app that exceeded my expectations. Their after-sales service has been outstanding, always prompt and supportive. I highly recommend them for their professionalism and expertise!",
-          name: "Perna Gupta",
-          image: testi5, 
-        },
+        
+        
         {
           id: 5,
-          quote: "The team at this development company is truly exceptional. They have a large group of talented developers who are not only friendly and helpful but also offer fresh, innovative ideas throughout the project. The quality of their work is outstanding, and they consistently deliver ahead of schedule.",
-          name: "Ritesh Ganguly",
+          quote: "Disciplined job and are ethically trustworthy. The team of this company are always available for inquiries and questions, and they provide support, key insight, ideas and direction when possible. I think they have a good team, well organized and efficient with their time. Nice experience with this company that designed my business website.",
+          name: "Rosanna Feyerabend",
           image: testi4, 
         },
         {

@@ -1,97 +1,129 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Team.css";
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa6";
 
 const teamMembers = [
   {
     name: "Vishal Jaiswal",
     position: "CEO & Founder",
-    image: "/Images/Vishal.png",
+    image: "https://ahaansoftware.com/uploadedimage/Team/Vishal.png",
   },
-  // {
-  //   name: "Sukanta Das",
-  //   position: "Sales Manager",
-  //   image: "/Images/Sukanta.png",
-  // },
   {
-    name: "Soumya Bhattach...",
+    name: "Soumya Bhattacharya",
     position: "Project Manager",
-    image: "/Images/Soumya.png",
+    image: "https://ahaansoftware.com/uploadedimage/Team/Soumya.png",
   },
   {
     name: "Debadipta Naskar",
     position: "Human Resource",
-    image: "/Images/Debadipta.png",
+    image: "https://ahaansoftware.com/uploadedimage/Team/Debadipta.png",
   },
   {
     name: "Aditi Dwivedi",
-    position: "Business Associate",
-    image: "/Images/Aditi.png",
-  },
-  {
-    name: "Ujjawal Shaw",
-    position: "Business Developer",
-    image: "/Images/Ujjwal.png",
-  },
-  {
-    name: "Surajit Bera",
-    position: "UI/UX Designer",
-    image: "/Images/Surajit.png",
-  },
-  {
-    name: "Rimpa Dutta",
-    position: "UI/UX Designer",
-    image: "/Images/Rimpa.png",
-  },
-  {
-    name: "Subhadeep Dey",
-    position: "Web Developer",
-    image: "/Images/Subhadeep.png",
+    position: "Business Development Associate",
+    image: "https://ahaansoftware.com/uploadedimage/Team/Aditi.png",
   },
   {
     name: "Soumi Kanungo",
     position: "Web Developer",
-    image: "/Images/Soumi.png",
+    image: "/https://ahaansoftware.com/uploadedimage/Team/Soumi.png",
+  },
+  {
+    name: "Rimpa Dutta",
+    position: "UI/UX Designer",
+    image: "https://ahaansoftware.com/uploadedimage/Team/Rimpa.png",
+  },
+  {
+    name: "Ujjawal Shaw",
+    position: "Business Developer",
+    image: "https://ahaansoftware.com/uploadedimage/Team/Ujjwal.png",
+  },
+  {
+    name: "Surajit Bera",
+    position: "UI/UX Designer",
+    image: "https://ahaansoftware.com/uploadedimage/Team/Surajit.png",
+  },
+  {
+    name: "Subhadeep Dey",
+    position: "Web Developer",
+    image: "https://ahaansoftware.com/uploadedimage/Team/Subhadeep.png",
   },
   {
     name: "Soumitra Maity",
-    position: "Backend Developer",
-    image: "/Images/Soumitra.png",
+    position: "Sr. Web Developer",
+    image: "https://ahaansoftware.com/uploadedimage/Team/Soumitra.png",
   },
   {
     name: "Sugam Karmakar",
-    position: " Frontend Developer",
-    image: "/Images/Sugam.png",
+    position: "Frontend Developer",
+    image: "https://ahaansoftware.com/uploadedimage/Team/Sugam.png",
   },
 ];
 
 const MeetOurTeam = () => {
   return (
     <div className="container py-5">
-      <h2 className="text-primary-team fw-bold">
-        Meet The Talented Minds Behind The Magic!
-      </h2>
-      <p className="text-muted team-text">
-        Let’s collaborate to turn your creative, marketing, and development
-        visions into immersive experiences and lasting partnerships. With a
-        win-win mindset, we treat every client as an equal ally, working
-        together to turn their visions into victory!
+      <h2 className="text-center title">Meet Our Team</h2>
+      <p className="text-center text-muted mb-4 description">
+        Our talented team is here to bring your vision to life!
       </p>
-      <div className="row mt-4">
+      <div className="row">
         {teamMembers.map((member, index) => (
-          <div key={index} className="col-md-3 col-sm-6 mb-4">
-            <div className="team-member text-center">
-              <img
-                src={member.image}
-                alt={member.name}
-                className="team-image"
-              />
-              <div className="d-flex justify-content-left align-items-left gap-5 mt-4">
-                <h5 className="fw-bold mb-0 member-name">{member.name}</h5>
-                <FaLinkedin className="linkedin-icon" />
+          <div key={index} className="col-lg-4 col-md-6 col-12 mb-4">
+            <div className="team-card position-relative overflow-hidden">
+              <div
+                className="team-bg position-absolute top-0 start-0 w-100"
+                style={{
+                  height: "150px",
+                }}
+              >
+                <img
+                  src="https://ahaansoftware.com/uploadedimage/ascbackground.png"
+                  alt="Background"
+                  className="img-fluid w-100 team-background-img"
+                  style={{
+                    height: "100%", 
+                    objectFit: "cover",
+                    borderRadius: "0",
+                  }}
+                />
               </div>
-              <p className="text-muted-position">{member.position}</p>
+
+              <div className="team-img position-relative">
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="rounded-circle border border-white"
+                />
+              </div>
+
+              <div className="card-body pt-3 d-flex justify-content-between align-items-center">
+                <div>
+                  <div style={{ position: "relative", left: "30px" }}>
+                    <h5 className="card-title fw-bold">{member.name}</h5>
+                    <p className="card-text text-muted">{member.position}</p>
+                  </div>
+                </div>
+                <div
+                  className="team-social-icons"
+                  style={{
+                    position: "relative",
+                    right: "30px",
+                    backgroundColor: "black", 
+                    borderRadius: "50%", 
+                    padding: "4px",
+                    display: "inline-block",
+                  }}
+                >
+                  <FaLinkedinIn
+                    style={{
+                      color: "#C7892B",
+                      fontSize: "23px",
+                    }}
+                  />
+                </div>
+              </div>
             </div>
           </div>
         ))}
