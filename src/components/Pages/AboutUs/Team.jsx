@@ -27,7 +27,7 @@ const teamMembers = [
   {
     name: "Soumi Kanungo",
     position: "Web Developer",
-    image: "/https://ahaansoftware.com/uploadedimage/Team/Soumi.png",
+    image: "https://ahaansoftware.com/uploadedimage/Team/Soumi.png",
   },
   {
     name: "Rimpa Dutta",

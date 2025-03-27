@@ -21,7 +21,21 @@
   font-weight: 500;
   font-family: outfit;
   gap: 4rem;
+  
 }
+
+
+.desktop-nav-menu li a:hover {
+  color: #C78A2B;
+}
+
+
+.desktop-nav-menu li a:active,
+.desktop-nav-menu li a.active {
+  color: #C78A2B; 
+  font-weight: bold;
+}
+
 
 .get-quote-btn {
   background-color: #000;
@@ -111,6 +125,10 @@ hr {
 
 .mobile-sidebar.open {
   right: 0; 
+}
+
+.get-quote-btn-mobile{
+padding: 0;
 }
 
 

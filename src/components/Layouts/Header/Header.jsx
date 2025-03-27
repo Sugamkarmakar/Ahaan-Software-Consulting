@@ -7,7 +7,6 @@ import { TbMessage } from "react-icons/tb";
 import { HiX } from "react-icons/hi";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
-
 const Header = () => {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -18,9 +17,12 @@ const Header = () => {
     setSidebarOpen(!sidebarOpen);
   };
 
-  // Close sidebar when clicking outside
   const handleClickOutside = (e) => {
-    if (sidebarRef.current && !sidebarRef.current.contains(e.target) && sidebarOpen) {
+    if (
+      sidebarRef.current &&
+      !sidebarRef.current.contains(e.target) &&
+      sidebarOpen
+    ) {
       setSidebarOpen(false);
     }
   };
@@ -35,11 +37,9 @@ const Header = () => {
     return () => window.removeEventListener("resize", handaleResize);
   }, []);
   useEffect(() => {
-    // Add event listener to detect outside clicks
     document.addEventListener("mousedown", handleClickOutside);
-    
+
     return () => {
-      // Cleanup event listener
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [sidebarOpen]);
@@ -47,7 +47,6 @@ const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-white">
       <div className="container ">
-        {/* Logo */}
         <a className="navbar-brand d-flex align-items-center" href="/">
           <img
             src="https://ahaansoftware.com/uploadedimage/asc.png"
@@ -79,7 +78,10 @@ const Header = () => {
               </Link>
             </li>
             <li className="nav-item ">
-              <Link className="nav-link " to="https://portfolio.ahaansoftware.com/">
+              <Link
+                className="nav-link "
+                to="https://portfolio.ahaansoftware.com/"
+              >
                 Portfolio
               </Link>
             </li>
@@ -88,52 +90,67 @@ const Header = () => {
         <div className="header-left-side">
           <div className="get-quote-container-1">
             {isMobile ? (
-              <TbMessage size={35} className="phone-get-qt" />
+              <a href="/contact" style={{padding:0}}>
+                <TbMessage size={35} className="phone-get-qt" />
+              </a>
             ) : (
               <a href="/contact" className=" get-quote-btn">
                 Get a Quote
               </a>
             )}
           </div>
-          <button className="asc-header-toggle" type="button" onClick={toggleSidebar}>
-        <HiMenuAlt3 size={40} color="#000" />
-      </button>
+          <button
+            className="asc-header-toggle"
+            type="button"
+            onClick={toggleSidebar}
+          >
+            <HiMenuAlt3 size={40} color="#000" />
+          </button>
 
-      {/* Mobile Sidebar */}
-      <div className={`mobile-sidebar ${sidebarOpen ? "open" : ""}`} ref={sidebarRef}>
-        <button className="close-btn" onClick={() => setSidebarOpen(false)}>
-          <HiX size={30} color="#000" />
-        </button>
-        <div className="sidebar-content">
-          <div className="nav-links">
-            <Link to="/">Home</Link>
-            <Link to="/about">About us</Link>
-            <Link to="/service">Services</Link>
-            <Link to="/industry">Industry</Link>
-            <Link to="https://portfolio.ahaansoftware.com/">Portfolio</Link>
+          <div
+            className={`mobile-sidebar ${sidebarOpen ? "open" : ""}`}
+            ref={sidebarRef}
+          >
+            <button className="close-btn" onClick={() => setSidebarOpen(false)}>
+              <HiX size={30} color="#000" />
+            </button>
+            <div className="sidebar-content">
+              <div className="nav-links">
+                <Link to="/">Home</Link>
+                <Link to="/about">About us</Link>
+                <Link to="/service">Services</Link>
+                <Link to="/industry">Industry</Link>
+                <Link to="https://portfolio.ahaansoftware.com/">Portfolio</Link>
+              </div>
+              <hr />
+              <div className="social-links">
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaFacebookF size={30} color="#CC9331" style={{backgroundColor:"#000", padding:7, borderRadius:50}} />
+                </a>
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaInstagram size={30} color="#CC9331" style={{backgroundColor:"#000", padding:7, borderRadius:50}} />
+                </a>
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedinIn size={30} color="#CC9331" style={{backgroundColor:"#000", padding:7, borderRadius:50}} />
+                </a>
+              </div>
+            </div>
           </div>
-          <hr />
-          <div className="social-links">
-           
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-              <FaFacebookF size={24} color="#43387B" />
-            </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-              <FaInstagram size={24} color="#43387B" />
-            </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-              <FaLinkedinIn size={24} color="#43387B" />
-            </a>
-          </div>
-        </div>
-      </div>
         </div>
         <div className="get-quote-container-2">
-          <a
-            href="/contact"
-            className="get-quote-btn"
-            
-          >
+          <a href="/contact" className="get-quote-btn">
             Get a Quote
           </a>
         </div>

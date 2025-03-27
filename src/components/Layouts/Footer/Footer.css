@@ -41,6 +41,10 @@
   border-radius: 30px;
   padding: 10px 30px;
 }
+.newsletter button:hover{
+  background-color: #CC9331;
+  color: #000;
+}
 
 .footer-heading {
   font-weight: bold;
