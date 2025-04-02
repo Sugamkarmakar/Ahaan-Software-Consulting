@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Header.css";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { TbMessage } from "react-icons/tb";
@@ -56,36 +56,33 @@ const Header = () => {
         </a>
 
         <div className="header-left-side d-flex align-items-center">
-          <ul className="d-flex  desktop-nav-menu">
-            <li>
-              <Link className="nav-link" to="/">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link className="nav-link" to="/about">
-                About us
-              </Link>
-            </li>
-            <li>
-              <Link className="nav-link" to="/service">
-                Services
-              </Link>
-            </li>
-            <li>
-              <Link className="nav-link" to="/industry">
-                Industry
-              </Link>
-            </li>
-            <li className="nav-item ">
-              <Link
-                className="nav-link "
-                to="https://portfolio.ahaansoftware.com/"
-              >
-                Portfolio
-              </Link>
-            </li>
-          </ul>
+        <ul className="d-flex desktop-nav-menu">
+  <li>
+    <NavLink to="/" className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"} end>
+      Home
+    </NavLink>
+  </li>
+  <li>
+    <NavLink to="/about" className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}>
+      About us
+    </NavLink>
+  </li>
+  <li>
+    <NavLink to="/service" className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}>
+      Services
+    </NavLink>
+  </li>
+  <li>
+    <NavLink to="/industry" className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}>
+      Industry
+    </NavLink>
+  </li>
+  <li>
+    <a className="nav-link" href="https://portfolio.ahaansoftware.com/">
+      Portfolio
+    </a>
+  </li>
+</ul>
         </div>
         <div className="header-left-side">
           <div className="get-quote-container-1">

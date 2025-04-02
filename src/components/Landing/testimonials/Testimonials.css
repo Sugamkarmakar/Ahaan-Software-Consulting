@@ -59,3 +59,12 @@ p.text-secondary.fst-italic{
   align-items: center;
   text-align: center;
 }
+
+@media (max-width:450px){
+  .testimonial-card{
+    padding: 10px;
+  }
+  .testi-text{
+    width: 100%;
+  }
+}

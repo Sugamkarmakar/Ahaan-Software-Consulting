@@ -11,7 +11,7 @@ const WhyChooseUs = () => {
       <label className="section1-client-label">Why Choose Us</label>
       <Row className="d-flex align-items-center">
         <Col lg={7} className="d-flex flex-column">
-          <div className="mt-5">
+          <div className="">
             <h2 className="mt-2 fw-bold first-section-heading">
               What Makes Us Worth Your Time & Trust
             </h2>
@@ -25,7 +25,7 @@ const WhyChooseUs = () => {
           </div>
 
           <Row className="mt-4">
-            <Col md={6} className="mb-3">
+            <Col md={6} className="">
               <Card className="border-0">
                 <Card.Body>
                   <Row className="align-items-center">
@@ -54,7 +54,7 @@ const WhyChooseUs = () => {
               </Card>
             </Col>
 
-            <Col md={6} className="mb-3">
+            <Col md={6} className="">
               <Card className="border-0">
                 <Card.Body>
                   <Row className="align-items-center">
@@ -81,7 +81,7 @@ const WhyChooseUs = () => {
               </Card>
             </Col>
 
-            <Col md={6} className="mb-3">
+            <Col md={6} className="">
               <Card className="border-0">
                 <Card.Body>
                   <Row className="align-items-center">
@@ -108,7 +108,7 @@ const WhyChooseUs = () => {
               </Card>
             </Col>
 
-            <Col md={6} className="mb-3">
+            <Col md={6} className="">
               <Card className="border-0">
                 <Card.Body>
                   <Row className="align-items-center">

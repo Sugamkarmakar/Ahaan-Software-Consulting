@@ -10,6 +10,8 @@ import Industry from "./components/Pages/Industry/Industry";
 import Home from "./components/Pages/Home/Home";
 import Landing from "./components/Landing/Landing";
 import WhatsAppChat from "./components/Whatsapp/WhatsAppChat";
+import BlogPage from "./components/Pages/Blog/Blog";
+import Blog from "./components/Pages/Blog/Blog";
 
 const AppContent = () => {
   const location = useLocation();
@@ -32,6 +34,7 @@ const AppContent = () => {
         <Route path="/service" element={<Service />} />
         <Route path="/industry" element={<Industry />} />
         <Route path="/web-design-development-company" element={<Landing />} />
+        <Route path="/blog" element={<Blog />} />
       </Routes>
 
       {!hideHeaderFooterRoutes.includes(location.pathname) && <Footer />}

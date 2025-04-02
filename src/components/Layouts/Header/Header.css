@@ -29,11 +29,10 @@
   color: #C78A2B;
 }
 
-
-.desktop-nav-menu li a:active,
-.desktop-nav-menu li a.active {
-  color: #C78A2B; 
-  font-weight: bold;
+.desktop-nav-menu li a.active-link {
+  color: #C78A2B;
+  border-bottom: 1px solid #C78A2B;
+  padding-bottom: 3px;
 }
 
 

@@ -3,6 +3,7 @@ import Banner from "./Banner";
 import Team from "./Team";
 
 import "bootstrap/dist/css/bootstrap.min.css";
+import AboutBanner from "./AboutBanner";
 
 function About() {
   return (

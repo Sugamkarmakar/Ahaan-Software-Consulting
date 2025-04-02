@@ -1,103 +1,117 @@
 .About-Banner {
-    background-image: url('https://ahaansoftware.com/uploadedimage/Banner/About-Banner.jpg');
-    background-size: cover;
-    height: 450px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    font-family: "Open Sans", sans-serif;
+  background-image: url('https://ahaansoftware.com/uploadedimage/Banner/About-Banner.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
 
-  }
-  
-  .banner-heading {
-    font-size: 6rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    color: transparent;
-    color: #ffffff;
-  }
+.banner-heading {
+  font-size: 6rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
 
-  .about-section {
-    background-color: #f8f9fa; /* Light background */
-  }
-  
-  .title {
-    font-size: 35px;
-    font-weight: 700;
-    color: #C7892B;
-    font-family: outfit;
-    line-height: 47px;
-  }
-  
-  .subtitle {
-    font-size: 25px;
-    font-weight: 600;
-    color: #000;
-    font-family: outfit; 
-    line-height: 40px;
-  }
-  
-  .description {
-    font-size: 16px ;
-    color: #555;
-    line-height: 1.6;
-    font-family: outfit;
-    text-align: left;
-  }
-  
-  .mission-title, .vision-title {
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: #000;
-    font-family: outfit;
-  }
-  
-  .img-fluid {
-    width: 570px;
-    height: 441px;
-    border-radius: 10px;
-  }
-  .team-discus-mobile{
-    display: none;
-  }
+.about-section {
+  background-color: #f8f9fa;
+  padding: 50px 20px;
+}
+
+.title {
+  font-size: 35px;
+  font-weight: 700;
+  color: #C7892B;
+  font-family: outfit;
+  line-height: 47px;
+}
+
+.subtitle {
+  font-size: 25px;
+  font-weight: 600;
+  color: #000;
+  font-family: outfit;
+  line-height: 40px;
+}
+
+.description {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  font-family: outfit;
+  text-align: left;
+}
+
+.mission-title, .vision-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #000;
+  font-family: outfit;
+}
+
+.img-fluid {
+  width: 100%;
+  max-width: 570px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.team-discus-mobile {
+  display: none;
+}
+
 @media (max-width: 991px) {
   .title {
-    font-size:25px;
-    line-height: normal;
-   
+      font-size: 28px;
+      line-height: normal;
   }
-  .subtitle{
-    font-size: 16px;
-    line-height: normal;
-    
+  .subtitle {
+      font-size: 20px;
+      line-height: normal;
+  }
+  .description {
+      font-size: 14px;
+  }
+  .mission-title, .vision-title {
+      font-size: 18px;
+      margin: 0;
+  }
+  .About-Banner {
+      height: 350px;
+  }
+  .banner-heading {
+      font-size: 3rem;
+  }
+}
 
-  }
-  .description{
-    font-size: 12px;
-
-
-  }
-  .mission-title, .vision-title{
-    font-size: 18px;
-    margin: 0;
-  }
-}  
-  
-  @media (max-width: 767px) {
-    .team-discus-desktop{
+@media (max-width: 767px) {
+  .team-discus-desktop {
       display: none;
-    }
-    .team-discus-mobile{
-      display: block;
-    }
-
-    .banner-heading {
-      font-size: 2rem;
-    }
-  
-    .banner-subheading {
-      font-size: 1.2rem;
-    }
   }
-  
+  .team-discus-mobile {
+      display: block;
+  }
+  .About-Banner {
+      height: 250px;
+  }
+  .banner-heading {
+      font-size: 2rem;
+  }
+  .banner-subheading {
+      font-size: 1.2rem;
+  }
+  .title {
+      font-size: 24px;
+  }
+  .subtitle {
+      font-size: 18px;
+  }
+  .description {
+      font-size: 12px;
+  }
+}

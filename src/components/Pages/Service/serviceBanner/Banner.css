@@ -1,31 +1,57 @@
 .banner {
-    background-image: url('https://ahaansoftware.com/uploadedimage/Banner/Service-Banner.jpg');
-    background-size: cover;
-    height: 450px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    font-family: "Open Sans", sans-serif;
+  background-image: url('https://ahaansoftware.com/uploadedimage/Banner/Service-Banner.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  text-align: center;
+}
+
+.banner-heading {
+  font-size: 6rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: transparent;
+  color: #fff;
+}
+
+.banner-heading span {
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+
+/* Tablet View */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .banner {
+      height: 400px;
+      padding: 15px;
   }
   
   .banner-heading {
-    font-size: 6rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    color: transparent;
-    color:#fff;
+      font-size: 4rem;
   }
-  .banner-heading span{
-    -webkit-text-stroke-color: rgb(255, 255, 255);
+  
+  .banner-subheading {
+      font-size: 1.5rem;
   }
-  @media (max-width: 768px) {
-    .banner-heading {
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .banner {
+      height: 250px;
+      padding: 10px;
+  }
+  
+  .banner-heading {
       font-size: 2rem;
-    }
-  
-    .banner-subheading {
-      font-size: 1.2rem;
-    }
   }
   
+  .banner-subheading {
+      font-size: 1.2rem;
+  }
+}
